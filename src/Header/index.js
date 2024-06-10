@@ -13,45 +13,45 @@ const Header = props => {
     history.replace('/login')
   }
   return (
-    <nav className="navbar">
-      <div className="nav-container">
-        <Link to="/">
+    <nav className='navbar'>
+      <div className='nav-container'>
+        <Link to='/'>
           <img
-            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-            alt="website logo"
-            className="home-website-logo"
+            src='https://assets.ccbp.in/frontend/react-js/logo-img.png'
+            alt='website logo'
+            className='home-website-logo'
           />
         </Link>
-        <ul className="nav-items">
+        <ul className='nav-items'>
           <li>
-            <Link to="/" className="nav-link-lg">
+            <Link to='/' className='nav-link-lg'>
               Home
             </Link>
-            <Link to="/" className="nav-link-sm">
-              <AiFillHome className="small-header-icons" />
+            <Link to='/' className='nav-link-sm'>
+              <AiFillHome className='small-header-icons' />
             </Link>
           </li>
           <li>
-            <Link to="/jobs" className="nav-link-lg">
+            <Link to='/jobs' className='nav-link-lg'>
               Jobs
             </Link>
-            <Link to="/jobs" className="nav-link-sm">
-              <BsFillBriefcaseFill className="small-header-icons" />
+            <Link to='/jobs' className='nav-link-sm'>
+              <BsFillBriefcaseFill className='small-header-icons' />
             </Link>
           </li>
-          <li className="logout-btn-list-item-small">
+          <li className='logout-btn-list-item-small'>
             <button
-              type="button"
-              className="logout-button-sm"
+              type='button'
+              className='logout-button-sm'
               onClick={onClickLogout}
             >
-              <FiLogOut className="logout-icon-sm" />
+              <FiLogOut className='logout-icon-sm' />
             </button>
           </li>
         </ul>
         <button
-          type="button"
-          className="logout-button-lg"
+          type='button'
+          className='logout-button-lg'
           onClick={onClickLogout}
         >
           Logout
